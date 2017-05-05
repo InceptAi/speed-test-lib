@@ -411,11 +411,11 @@ public class RepeatWrapper {
         mRepeatTempPckSize = 0;
         mRepeatFinished = false;
         mStartDateRepeat = 0;
-        mRepeatTransferRateList = Collections.synchronizedList(new ArrayList<>());
+        mRepeatTransferRateList = Collections.synchronizedList(new ArrayList<BigDecimal>());
     }
 
     /**
-     * Clear completly download/upload repeat task.
+     * Clear completely download/upload repeat task.
      *
      * @param listener speed test listener
      * @param timer    finished task timer
