@@ -411,7 +411,7 @@ public class RepeatWrapper {
         mRepeatTempPckSize = 0;
         mRepeatFinished = false;
         mStartDateRepeat = 0;
-        mRepeatTransferRateList = new ArrayList<>();
+        mRepeatTransferRateList = Collections.synchronizedList(new ArrayList<>());
     }
 
     /**
